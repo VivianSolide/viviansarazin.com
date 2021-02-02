@@ -18,23 +18,16 @@ export default {
   props: {
     height: {
       type: Number,
-      default: 40
+      default: 40,
     },
     width: {
       type: Number,
-      default: 40
+      default: 40,
     },
     fill: {
       type: String,
-      default: "#fff"
-    }
-  }
-};
-</script>
-
-<style lang="scss" scoped>
-svg {
-  vertical-align: middle;
-  margin-right: 10px;
+      default: '#fff',
+    },
+  },
 }
-</style>
+</script>
