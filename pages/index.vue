@@ -1,11 +1,5 @@
 <template>
   <div class="container">
-    <h1>Bonjour Monde !</h1>
+    <h1 class="">Bonjour Monde !</h1>
   </div>
 </template>
-
-<style scoped>
-.dark-mode {
-  @apply bg-gray-700;
-}
-</style>

@@ -1,6 +1,6 @@
 <template>
-  <section class="masthead">
-    <h1>{{ tagline }}</h1>
+  <section>
+    <h1 class="text-center">{{ tagline }}</h1>
   </section>
 </template>
 

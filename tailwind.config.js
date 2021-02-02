@@ -52,13 +52,13 @@ module.exports = {
           '@screen lg': {
             maxWidth: theme('screens.lg'),
             paddingInline: theme('spacing.40'),
-            paddingTop: theme('spacing.32'),
+            paddingTop: theme('spacing.12'),
             paddingBottom: theme('spacing.12'),
           },
           '@screen xl': {
             maxWidth: theme('screens.xl'),
             paddingInline: theme('spacing.64'),
-            paddingTop: theme('spacing.32'),
+            paddingTop: theme('spacing.16'),
             paddingBottom: theme('spacing.16'),
           },
         },

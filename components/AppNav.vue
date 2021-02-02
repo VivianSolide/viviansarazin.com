@@ -13,7 +13,6 @@
       </ul>
     </div>
     <div>
-      <h1>Color mode: {{ $colorMode.value }}</h1>
       <select v-model="$colorMode.preference">
         <option value="system">System</option>
         <option value="light">Light</option>
@@ -35,7 +34,7 @@ export default {
 </script>
 <style>
 .light-mode {
-  @apply bg-gray-100;
+  @apply bg-white;
   @apply text-gray-700;
 }
 
