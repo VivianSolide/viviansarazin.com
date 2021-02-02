@@ -21,8 +21,10 @@
     "nuxt": "^2.14.0"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.4.0",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "@nuxtjs/color-mode": "^2.0.3",
     "@nuxtjs/eslint-config": "^5.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/stylelint-module": "^4.0.0",
@@ -43,6 +45,7 @@
     "stylelint": "^13.9.0",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",
+    "tailwindcss-dark-mode": "^1.1.7",
     "vue-jest": "^3.0.4"
   }
 }

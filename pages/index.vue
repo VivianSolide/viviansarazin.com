@@ -3,3 +3,9 @@
     <h1>Bonjour Monde !</h1>
   </div>
 </template>
+
+<style scoped>
+.dark-mode {
+  @apply bg-gray-700;
+}
+</style>

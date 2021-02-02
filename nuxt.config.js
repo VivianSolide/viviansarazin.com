@@ -64,7 +64,11 @@ export default {
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode',
   ],
+  // colorMode: {
+  //   classSuffix: '',
+  // },
   modules: ['@nuxtjs/robots', '@nuxtjs/sitemap'],
   sitemap: {
     hostname: 'https://www.viviansarazin.com',
