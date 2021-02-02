@@ -66,6 +66,9 @@ export default {
     '@nuxtjs/tailwindcss',
   ],
   modules: ['@nuxtjs/robots', '@nuxtjs/sitemap'],
+  sitemap: {
+    hostname: 'https://www.viviansarazin.com',
+  },
   /*
    ** Build configuration
    */
