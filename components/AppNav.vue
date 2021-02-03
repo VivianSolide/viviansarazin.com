@@ -5,10 +5,10 @@
         <app-icon :stroke="stroke"></app-icon>
       </nuxt-link>
       <nuxt-link to="/blog"> <p class="ml-5 mt-2">Blog</p></nuxt-link>
-      <nuxt-link to="/projets"> <p class="ml-5 mt-2">Projets</p></nuxt-link>
-      <nuxt-link to="/portfolio"> <p class="ml-5 mt-2">Portfolio</p></nuxt-link>
+      <!-- <nuxt-link to="/projets"> <p class="ml-5 mt-2">Projets</p></nuxt-link> -->
+      <!-- <nuxt-link to="/portfolio"> <p class="ml-5 mt-2">Portfolio</p></nuxt-link> -->
     </div>
-    <div class="lg:w-64 mt-2">
+    <div class="mt-2">
       <select v-model="$colorMode.preference">
         <option value="system">System</option>
         <option value="light">Light</option>

@@ -31,13 +31,11 @@ p {
 
 h1,
 h2,
-h3,
-h4,
-h5 {
-  margin: 3rem 0 1.38rem;
+h3 {
+  margin: 2rem 0 1.38rem;
   font-family: 'Consolas', sans-serif;
   font-weight: 400;
-  line-height: 1.3;
+  line-height: 1;
 }
 
 h1 {
