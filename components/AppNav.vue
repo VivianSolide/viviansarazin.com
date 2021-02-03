@@ -1,18 +1,14 @@
 <template>
-  <div class="nav">
-    <div>
-      <ul>
-        <li>
-          <nuxt-link exact to="/">
-            <app-icon></app-icon>Vivian Sarazin
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/blog">Blog</nuxt-link>
-        </li>
-      </ul>
+  <div class="flex justify-between lg:px-64 lg:py-4">
+    <div class="flex flex-row">
+      <nuxt-link exact to="/">
+        <app-icon :stroke="stroke"></app-icon>
+      </nuxt-link>
+      <nuxt-link to="/blog"> <p class="ml-5 mt-2">Blog</p></nuxt-link>
+      <nuxt-link to="/projets"> <p class="ml-5 mt-2">Projets</p></nuxt-link>
+      <nuxt-link to="/portfolio"> <p class="ml-5 mt-2">Portfolio</p></nuxt-link>
     </div>
-    <div>
+    <div class="lg:w-64 mt-2">
       <select v-model="$colorMode.preference">
         <option value="system">System</option>
         <option value="light">Light</option>
@@ -29,6 +25,17 @@ import AppIcon from '@/components/AppIcon.vue'
 export default {
   components: {
     AppIcon,
+  },
+  computed: {
+    stroke() {
+      if (this.$nuxt.$colorMode.value === 'dark') {
+        return 'white'
+      } else if (this.$nuxt.$colorMode.value === 'light') {
+        return '#4a5568'
+      } else {
+        return '#7b341e'
+      }
+    },
   },
 }
 </script>
