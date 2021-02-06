@@ -1,6 +1,6 @@
 <template>
-  <div class="flex justify-between lg:px-64 lg:py-4">
-    <div class="flex flex-row">
+  <div class="flex justify-between items-center lg:px-64 lg:py-4">
+    <div class="flex items-center">
       <nuxt-link exact to="/">
         <app-icon :stroke="stroke"></app-icon>
       </nuxt-link>
@@ -8,8 +8,11 @@
       <!-- <nuxt-link to="/projets"> <p class="ml-5 mt-2">Projets</p></nuxt-link> -->
       <!-- <nuxt-link to="/portfolio"> <p class="ml-5 mt-2">Portfolio</p></nuxt-link> -->
     </div>
-    <div class="mt-2">
-      <select v-model="$colorMode.preference">
+    <div>
+      <select
+        v-model="$colorMode.preference"
+        class="form-select border border-current rounded bg-transparent"
+      >
         <option value="system">System</option>
         <option value="light">Light</option>
         <option value="dark">Dark</option>

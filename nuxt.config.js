@@ -29,17 +29,17 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Rubik|Consolas&display=swap',
-      },
+      // {
+      //   rel: 'stylesheet',
+      //   href:
+      //     'https://fonts.googleapis.com/css?family=Rubik|Consolas&display=swap',
+      // },
     ],
   },
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: { color: '#4c51bf' },
   /*
    ** Global CSS
    */
@@ -66,10 +66,16 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
   ],
-  // colorMode: {
-  //   classSuffix: '',
-  // },
-  modules: ['@nuxtjs/robots', '@nuxtjs/sitemap'],
+
+  modules: ['@nuxtjs/robots', '@nuxtjs/sitemap', '@nuxtjs/google-fonts'],
+
+  googleFonts: {
+    families: {
+      Rubik: true,
+      Consolas: true,
+    },
+    display: 'swap',
+  },
   sitemap: {
     hostname: 'https://www.viviansarazin.com',
   },
