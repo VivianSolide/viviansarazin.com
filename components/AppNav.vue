@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between items-center lg:px-64 lg:py-4">
+  <div class="flex justify-between items-center lg:px-64 lg:py-4 p-4">
     <div class="flex items-center">
       <nuxt-link exact to="/">
         <app-icon :stroke="stroke"></app-icon>

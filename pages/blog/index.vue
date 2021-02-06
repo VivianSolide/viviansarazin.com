@@ -1,21 +1,22 @@
 <template>
   <div>
     <app-masthead tagline="Blog"></app-masthead>
-    <div class="container">
-      <h2>Catégories</h2>
-      <div class="grid md:grid-cols-5 md:gap-6 grid-cols-3">
-        <div
-          v-for="tag in tags"
-          :key="tag.id"
-          :class="[tag.id === selectedTag ? activeClass : '']"
-          @click="updateTag(tag)"
-        >
-          <a class="text-center">{{ tag.name }}</a>
-        </div>
+    <div class="bg-white hidden md:block w-64 pl-6 my-2 fixed">
+      <h3>Catégories</h3>
+      <div
+        v-for="tag in tags"
+        :key="tag.id"
+        :class="[tag.id === selectedTag ? activeClass : '']"
+        @click="updateTag(tag)"
+      >
+        <a class="text-center">{{ tag.name }}</a>
       </div>
-      <h2>
+    </div>
+    <div class="container">
+      <div class="grid grid-cols-1 md:gap-6 md:grid-cols-3"></div>
+      <h4 class="text-right">
         {{ sortedPosts.length }} article{{ sortedPosts.length > 1 ? 's' : '' }}
-      </h2>
+      </h4>
       <div class="grid md:grid-cols-3 md:gap-6 grid-cols-1">
         <div v-for="post in sortedPosts" :key="post.id">
           <h3>

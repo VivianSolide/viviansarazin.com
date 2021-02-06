@@ -1,16 +1,19 @@
 <template>
-  <div>
+  <div class="flex flex-col h-screen">
     <app-nav />
-    <nuxt />
+    <nuxt class="flex-grow" />
+    <app-footer />
   </div>
 </template>
 
 <script>
 import AppNav from '~/components/AppNav.vue'
+import AppFooter from '~/components/AppFooter.vue'
 
 export default {
   components: {
     AppNav,
+    AppFooter,
   },
 }
 </script>

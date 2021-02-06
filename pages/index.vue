@@ -4,7 +4,7 @@
       src="vivian-sarazin.jpg"
       alt="Vivian Sarazin"
       srcset=""
-      class="rounded-full"
+      class="rounded-full md:w-1/2"
     />
     <h1 class="mt-12">Vivian Sarazin</h1>
     <p>
@@ -36,7 +36,7 @@
     </p>
     <h3>Data</h3>
     <div class="grid grid-cols-2 gap-4">
-      <div class="">
+      <div class="md:col-span-1 col-span-2">
         <h4>Jupyter Notebook</h4>
         <p>
           C'est assez incroyable ce que peut faire un notebook. Ce que j'aime le
@@ -44,7 +44,7 @@
           récupérer toute la logique utile pour en faire des modules Python.
         </p>
       </div>
-      <div class="">
+      <div class="md:col-span-1 col-span-2">
         <h4>Google Marketing</h4>
         <p>
           Avec la suite Google Marketing (Tag Manager, Analytics, Data Studio &
@@ -65,7 +65,7 @@
     </div>
     <h3>Back</h3>
     <div class="grid grid-cols-2 gap-4">
-      <div class="">
+      <div class="col-span-2">
         <h4>Express</h4>
         <p>
           Express c'est le premier framework back-end que j'ai appris. Copuplé à
@@ -75,7 +75,7 @@
           peut-être un peu limité ?
         </p>
       </div>
-      <div class="">
+      <div class="md:col-span-1 col-span-2">
         <h4>Django</h4>
         <p>
           Autre salle, autre ambiance, Django est un framework plutôt puissant.
@@ -83,7 +83,7 @@
           toutes les fonctionnalités permises et l'aspect configuration.
         </p>
       </div>
-      <div class="col-span-2">
+      <div class="md:col-span-1 col-span-2">
         <h4>Strapi</h4>
         <p>
           Toutefois, mon petit chouchou du moment reste Strapi. Ce n'est pas
@@ -96,7 +96,7 @@
     </div>
     <h3>Front</h3>
     <div class="grid grid-cols-2 gap-4">
-      <div class="">
+      <div class="md:col-span-1 col-span-2">
         <h4>VueJs</h4>
         <p>
           Lors de mes tutorats à IronHack, j'ai étudié les trois frameworks
@@ -106,7 +106,7 @@
           eXperience (DX) de Vue qui est pour moi la plus agréable.
         </p>
       </div>
-      <div class="">
+      <div class="md:col-span-1 col-span-2">
         <h4>Tailwind</h4>
         <p>
           Et oui, jadis je ne jurais que par Bootstrap mais ça c'était avant.
@@ -129,8 +129,8 @@
     </div>
     <h2>Se contacter</h2>
     <form name="contact" method="POST" data-netlify="true">
-      <div class="grid grid-cols-1 gap-6">
-        <div class="grid grid-cols-2">
+      <div class="grid grid-cols-1 gap-y-1 my-3">
+        <div class="grid md:grid-cols-2 gap-y-1 grid-cols-1">
           <label class="block">
             <input
               type="text"
