@@ -21,7 +21,7 @@
         <div
           v-for="post in sortedPosts"
           :key="post.id"
-          class="border p-3"
+          class="border border-current p-3"
           style="display: inline-table"
         >
           <h3 class="mt-0">

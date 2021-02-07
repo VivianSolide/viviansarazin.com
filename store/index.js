@@ -3,6 +3,8 @@ const siteURL = 'https://blog.viviansarazin.com/'
 export const state = () => ({
   posts: [],
   tags: [],
+  projects: [],
+  projectsTags: [],
 })
 
 export const mutations = {
@@ -14,6 +16,9 @@ export const mutations = {
   },
   updateProjects: (state, projects) => {
     state.projects = projects
+  },
+  updateProjectsTags: (state, projectsTags) => {
+    state.projectsTags = projectsTags
   },
 }
 
@@ -67,11 +72,11 @@ export const actions = {
     }
   },
   async getProjects({ state, commit }) {
-    // if (state.projects.length) return
+    if (state.projects.length) return
 
     try {
       let projects = await fetch(
-        `${siteURL}/wp-json/wp/v2/projects?page=1&per_page=20&_embed=1`
+        `${siteURL}/wp-json/wp/v2/projects`
       ).then((res) => res.json())
 
       projects = projects
@@ -87,6 +92,29 @@ export const actions = {
         }))
 
       commit('updateProjects', projects)
+    } catch (err) {
+      console.log(err)
+    }
+  },
+  async getProjectsTags({ state, commit }) {
+    if (state.projectsTags.length) return
+
+    let allTags = state.projects.reduce((acc, item) => {
+      return acc.concat(item.tags)
+    }, [])
+    allTags = allTags.join()
+
+    try {
+      let tags = await fetch(
+        `${siteURL}/wp-json/wp/v2/tags?page=1&per_page=40&include=${allTags}`
+      ).then((res) => res.json())
+
+      tags = tags.map(({ id, name }) => ({
+        id,
+        name,
+      }))
+
+      commit('updateProjectsTags', tags)
     } catch (err) {
       console.log(err)
     }

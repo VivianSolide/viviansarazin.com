@@ -6,18 +6,44 @@
         v-model="query"
         type="search"
         aria-label="Search"
-        class="block w-full py-3 pl-3 pr-3 text-base leading-6 placeholder-gray-500 transition duration-150 ease-in-out border appearance-none md:pr-10 border-rainy-grey rounded-tl-md rounded-bl-md focus:ring-3 focus:ring-green-300 focus:ring-opacity-50 focus:outline-none focus:placeholder-gray-400 sm:flex-1"
-        placeholder="Search a module (name, category, username, etc.)"
+        class="bg-transparent w-full p-3 placeholder-current border-current leading-6 border"
+        placeholder="🔍 Frameworks, skills ..."
       />
-      <div class="grid md:gap-6 grid-cols-1">
-        <div v-for="project in filteredProjects" :key="project.id">
-          <h3>
+      <!-- <div class="flex justify-between mt-6">
+        <button
+          v-for="tag in projectsTags"
+          :key="tag.id"
+          class="text-white rounded-full bg-blue-400 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 px-3 py-1"
+        >
+          {{ tag.name }}
+        </button>
+      </div> -->
+      <div
+        v-if="filteredProjects.length > 0"
+        class="grid md:gap-6 grid-cols-1 mt-3"
+      >
+        <div
+          v-for="project in filteredProjects"
+          :key="project.id"
+          class="border border-current p-3 my-3 md:my-0"
+        >
+          <h3 class="mt-1">
             <a :href="`projects/${project.slug}`">{{
               project.title.rendered
             }}</a>
           </h3>
-          <small>{{ project.date | dateformat }}</small>
-          <div v-html="project.excerpt.rendered"></div>
+          <div class="flex items-center">
+            <div class="w-3/4" v-html="project.excerpt.rendered"></div>
+            <div class="w-1/8">
+              <button
+                v-for="tag in project.tags"
+                :key="tag.id"
+                class="text-white rounded-full bg-blue-400 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 px-3 py-1"
+              >
+                {{ tag.name }}
+              </button>
+            </div>
+          </div>
           <button
             class="text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 p-3"
           >
@@ -26,6 +52,9 @@
             >
           </button>
         </div>
+      </div>
+      <div v-else>
+        <p class="mt-12">🤷 Oupsss...</p>
       </div>
     </div>
   </div>
@@ -50,8 +79,25 @@ export default {
     projects() {
       return this.$store.state.projects
     },
+    projectsTags() {
+      return this.$store.state.projectsTags
+    },
     filteredProjects() {
       let projects = this.projects
+
+      for (let el = 0; el < projects.length; el++) {
+        const project = projects[el]
+        if (project.tags.length > 0) {
+          for (let i = 0; i < project.tags.length; i++) {
+            for (let j = 0; j < this.projectsTags.length; j++) {
+              if (projects[el].tags[i] === this.projectsTags[j].id) {
+                projects[el].tags[i] = this.projectsTags[j]
+              }
+            }
+          }
+        }
+      }
+
       if (this.query) {
         projects = this.fuse.search(this.query).map((p) => p.item)
       }
@@ -61,7 +107,7 @@ export default {
   mounted() {
     const fuseOptions = {
       threshold: 0.1,
-      keys: ['title.rendered', 'tags'],
+      keys: ['title.rendered', 'tags.name'],
     }
     const index = Fuse.createIndex(fuseOptions.keys, this.projects)
     this.fuse = new Fuse(this.projects, fuseOptions, index)
