@@ -12,6 +12,9 @@ export const mutations = {
   updateTags: (state, tags) => {
     state.tags = tags
   },
+  updateProjects: (state, projects) => {
+    state.projects = projects
+  },
 }
 
 export const actions = {
@@ -59,6 +62,31 @@ export const actions = {
       }))
 
       commit('updateTags', tags)
+    } catch (err) {
+      console.log(err)
+    }
+  },
+  async getProjects({ state, commit }) {
+    // if (state.projects.length) return
+
+    try {
+      let projects = await fetch(
+        `${siteURL}/wp-json/wp/v2/projects?page=1&per_page=20&_embed=1`
+      ).then((res) => res.json())
+
+      projects = projects
+        .filter((el) => el.status === 'publish')
+        .map(({ id, slug, title, excerpt, date, tags, content }) => ({
+          id,
+          slug,
+          title,
+          excerpt,
+          date,
+          tags,
+          content,
+        }))
+
+      commit('updateProjects', projects)
     } catch (err) {
       console.log(err)
     }

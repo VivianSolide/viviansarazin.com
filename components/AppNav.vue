@@ -5,7 +5,7 @@
         <app-icon :stroke="stroke"></app-icon>
       </nuxt-link>
       <nuxt-link to="/blog"> <p class="ml-5 mt-2">Blog</p></nuxt-link>
-      <!-- <nuxt-link to="/projets"> <p class="ml-5 mt-2">Projets</p></nuxt-link> -->
+      <nuxt-link to="/projects"> <p class="ml-5 mt-2">Projets</p></nuxt-link>
       <!-- <nuxt-link to="/portfolio"> <p class="ml-5 mt-2">Portfolio</p></nuxt-link> -->
     </div>
     <div>

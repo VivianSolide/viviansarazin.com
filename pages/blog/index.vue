@@ -1,7 +1,7 @@
 <template>
   <div>
     <app-masthead tagline="Blog"></app-masthead>
-    <div class="bg-white hidden md:block w-64 pl-6 my-2 fixed">
+    <div class="hidden md:block w-64 pl-6 my-2 fixed">
       <h3>Catégories</h3>
       <div
         v-for="tag in tags"
@@ -17,14 +17,23 @@
       <h4 class="text-right">
         {{ sortedPosts.length }} article{{ sortedPosts.length > 1 ? 's' : '' }}
       </h4>
-      <div class="grid md:grid-cols-3 md:gap-6 grid-cols-1">
-        <div v-for="post in sortedPosts" :key="post.id">
-          <h3>
+      <div class="grid md:grid-cols-3 md:gap-6 grid-cols-1 mt-3">
+        <div
+          v-for="post in sortedPosts"
+          :key="post.id"
+          class="border p-3"
+          style="display: inline-table"
+        >
+          <h3 class="mt-0">
             <a :href="`blog/${post.slug}`">{{ post.title.rendered }}</a>
           </h3>
           <small>{{ post.date | dateformat }}</small>
           <div v-html="post.excerpt.rendered"></div>
-          <a :href="`blog/${post.slug}`" class="readmore slide">Lire ⟶</a>
+          <button
+            class="text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 p-3"
+          >
+            <a :href="`blog/${post.slug}`">Lire ⟶</a>
+          </button>
         </div>
       </div>
     </div>
@@ -41,7 +50,8 @@ export default {
   data() {
     return {
       selectedTag: null,
-      activeClass: 'active-class',
+      activeClass:
+        'text-white bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500',
     }
   },
   computed: {

@@ -29,13 +29,12 @@ body {
 }
 
 p {
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 h1,
 h2,
 h3 {
-  margin: 2rem 0 1.38rem;
   font-family: 'Consolas', sans-serif;
   font-weight: 400;
   line-height: 1;
@@ -47,14 +46,17 @@ h1 {
 }
 
 h2 {
+  margin-top: 2.441rem;
   font-size: 2.441rem;
 }
 
 h3 {
+  margin-top: 1.563rem;
   font-size: 1.953rem;
 }
 
 h4 {
+  margin-top: 1.25rem;
   font-size: 1.563rem;
 }
 

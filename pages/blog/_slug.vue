@@ -8,7 +8,12 @@
     <div>
       <h3>Découvrir également :</h3>
       <div class="grid grid-cols-3 gap-3">
-        <div v-for="bouncePost in bouncePosts" :key="bouncePost.id">
+        <div
+          v-for="bouncePost in bouncePosts"
+          :key="bouncePost.id"
+          class="border p-3"
+          style="display: inline-table"
+        >
           <h3>
             <a :href="`blog/${bouncePost.slug}`">{{
               bouncePost.title.rendered
@@ -16,7 +21,11 @@
           </h3>
           <small>{{ bouncePost.date | dateformat }}</small>
           <div v-html="bouncePost.excerpt.rendered"></div>
-          <a :href="`blog/${bouncePost.slug}`">Lire ⟶</a>
+          <button
+            class="text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 p-3"
+          >
+            <a :href="`${bouncePost.slug}`">Lire ⟶</a>
+          </button>
         </div>
       </div>
     </div>

@@ -1,8 +1,8 @@
 <template>
   <footer
-    class="bg-transparent text-center border border-current border-b-0 border-l-0 border-r-0"
+    class="bg-transparent text-center border border-b-0 border-l-0 border-r-0"
   >
-    <p class="mt-3 text-current text-bold">Vivian Sarazin - {{ year }}</p>
+    <p class="my-3 text-current text-bold">Vivian Sarazin - {{ year }}</p>
   </footer>
 </template>
 
