@@ -18,6 +18,7 @@
     "@nuxtjs/robots": "^2.4.2",
     "@nuxtjs/sitemap": "^2.4.0",
     "axios": "^0.19.0",
+    "fuse.js": "^6.4.6",
     "nuxt": "^2.14.0"
   },
   "devDependencies": {
