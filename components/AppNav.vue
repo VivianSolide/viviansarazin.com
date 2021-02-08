@@ -1,14 +1,13 @@
 <template>
   <nav
-    class="flex justify-between items-center lg:px-64 lg:py-4 p-4 shadow-md border border-t-0 border-l-0 border-r-0 border-current"
+    class="flex justify-between items-center lg:px-64 lg:py-4 py-4 shadow-md border border-t-0 border-l-0 border-r-0 border-current"
   >
     <div class="flex">
       <nuxt-link exact to="/">
         <app-icon :stroke="stroke"></app-icon>
       </nuxt-link>
-      <nuxt-link to="/blog"> <p class="ml-6 m-2">Blog</p></nuxt-link>
+      <nuxt-link to="/blog"> <p class="pl-6 m-2">Blog</p></nuxt-link>
       <nuxt-link to="/projects"> <p class="m-2">Projets</p></nuxt-link>
-      <!-- <nuxt-link to="/portfolio"> <p class="ml-5 mt-2">Portfolio</p></nuxt-link> -->
     </div>
     <div>
       <select
@@ -30,6 +29,9 @@ import AppIcon from '@/components/AppIcon.vue'
 export default {
   components: {
     AppIcon,
+  },
+  data() {
+    return {}
   },
   computed: {
     stroke() {

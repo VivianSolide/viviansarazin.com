@@ -21,9 +21,9 @@
           <img :src="project.cover" alt="" srcset="" class="w-full" />
           <div class="p-3">
             <h3 class="mt-1">
-              <a :href="`projects/${project.slug}`">{{
+              <NuxtLink :to="`projects/${project.slug}`">{{
                 project.title.rendered
-              }}</a>
+              }}</NuxtLink>
             </h3>
             <div class="flex items-center">
               <div class="w-3/4" v-html="project.excerpt.rendered"></div>
@@ -41,7 +41,9 @@
             <button
               class="text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 p-3"
             >
-              <a :href="`/projects/${project.slug}`">En savoir plus ⟶</a>
+              <NuxtLink :to="`/projects/${project.slug}`"
+                >En savoir plus ⟶</NuxtLink
+              >
             </button>
           </div>
         </div>

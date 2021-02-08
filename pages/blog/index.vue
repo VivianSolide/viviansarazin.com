@@ -9,7 +9,7 @@
         :class="[tag.id === selectedTag ? activeClass : '']"
         @click="updateTag(tag)"
       >
-        <a class="px-1 text-center">{{ tag.name }}</a>
+        <button class="px-1 text-left w-full">{{ tag.name }}</button>
       </div>
     </div>
     <div class="container pt-0">
@@ -31,14 +31,16 @@
           </div>
           <div class="p-3">
             <h3 class="mt-6 mb-3">
-              <a :href="`blog/${post.slug}`">{{ post.title.rendered }}</a>
+              <NuxtLink :to="`blog/${post.slug}`">{{
+                post.title.rendered
+              }}</NuxtLink>
             </h3>
             <small>{{ post.date | dateformat }}</small>
             <div v-html="post.excerpt.rendered"></div>
             <button
               class="text-white bg-indigo-600 hover:bg-indigo-700 hover:border-white p-3"
             >
-              <a :href="`blog/${post.slug}`">Lire ⟶</a>
+              <NuxtLink :to="`blog/${post.slug}`">Lire ⟶</NuxtLink>
             </button>
           </div>
         </div>

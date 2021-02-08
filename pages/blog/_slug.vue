@@ -15,16 +15,16 @@
           style="display: inline-table"
         >
           <h3>
-            <a :href="`blog/${bouncePost.slug}`">{{
+            <NuxtLink :to="`blog/${bouncePost.slug}`">{{
               bouncePost.title.rendered
-            }}</a>
+            }}</NuxtLink>
           </h3>
           <small>{{ bouncePost.date | dateformat }}</small>
           <div v-html="bouncePost.excerpt.rendered"></div>
           <button
             class="text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 p-3"
           >
-            <a :href="`${bouncePost.slug}`">Lire ⟶</a>
+            <NuxtLink :to="`${bouncePost.slug}`">Lire ⟶</NuxtLink>
           </button>
         </div>
       </div>
