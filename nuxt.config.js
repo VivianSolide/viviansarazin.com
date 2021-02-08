@@ -1,17 +1,4 @@
-import axios from 'axios'
-const dynamicRoutes = () => {
-  const routes = axios
-    .get(
-      'https://blog.viviansarazin.com/wp-json/wp/v2/posts?page=1&per_page=20'
-    )
-    .then((res) => {
-      return res.data.map((post) => `/blog/${post.slug}`)
-    })
-  return routes
-}
-
 export default {
-  mode: 'universal',
   target: 'static',
   /*
    ** Headers of the page
@@ -29,20 +16,17 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      // {
-      //   rel: 'stylesheet',
-      //   href:
-      //     'https://fonts.googleapis.com/css?family=Rubik|Consolas&display=swap',
-      // },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css?family=Rubik|Consolas&display=swap',
+      },
     ],
   },
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#4c51bf' },
-  /*
-   ** Global CSS
-   */
+  loading: { color: '#5a67d8' },
   /*
    ** Plugins to load before mounting the App
    */
@@ -53,9 +37,6 @@ export default {
     '~/plugins/projectsTags.server.js',
     '~/plugins/dateformat.js',
   ],
-  generate: {
-    routes: dynamicRoutes,
-  },
   /*
    ** Nuxt.js dev-modules
    */

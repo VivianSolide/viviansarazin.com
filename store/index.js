@@ -7,7 +7,7 @@ async function populateCover(posts) {
       const media = temp[0].href
       const imgUrl = await fetch(media)
         .then((res) => res.json())
-        .then((data) => data.guid.rendered)
+        .then((data) => data.guid.rendered.replace('http', 'https'))
         .catch((err) => err)
 
       posts[i].cover = imgUrl
@@ -64,7 +64,7 @@ export const actions = {
 
       commit('updatePosts', posts)
     } catch (err) {
-      console.log(err)
+      return new Error(err)
     }
   },
   async getTags({ state, commit }) {
@@ -87,7 +87,7 @@ export const actions = {
 
       commit('updateTags', tags)
     } catch (err) {
-      console.log(err)
+      return new Error(err)
     }
   },
   async getProjects({ state, commit }) {
@@ -115,7 +115,7 @@ export const actions = {
 
       commit('updateProjects', projects)
     } catch (err) {
-      console.log(err)
+      return new Error(err)
     }
   },
   async getProjectsTags({ state, commit }) {
@@ -138,7 +138,7 @@ export const actions = {
 
       commit('updateProjectsTags', tags)
     } catch (err) {
-      console.log(err)
+      return new Error(err)
     }
   },
 }

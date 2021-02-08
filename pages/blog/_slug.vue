@@ -15,7 +15,7 @@
           style="display: inline-table"
         >
           <h3>
-            <NuxtLink :to="`blog/${bouncePost.slug}`">{{
+            <NuxtLink :to="`/blog/${bouncePost.slug}`">{{
               bouncePost.title.rendered
             }}</NuxtLink>
           </h3>
