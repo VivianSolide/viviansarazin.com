@@ -9,31 +9,38 @@
         :class="[tag.id === selectedTag ? activeClass : '']"
         @click="updateTag(tag)"
       >
-        <a class="text-center">{{ tag.name }}</a>
+        <a class="px-1 text-center">{{ tag.name }}</a>
       </div>
     </div>
-    <div class="container">
+    <div class="container pt-0">
       <div class="grid grid-cols-1 md:gap-6 md:grid-cols-3"></div>
       <h4 class="text-right">
-        {{ sortedPosts.length }} article{{ sortedPosts.length > 1 ? 's' : '' }}
+        <span class="text-indigo-600">{{ sortedPosts.length }}</span> article{{
+          sortedPosts.length > 1 ? 's' : ''
+        }}
       </h4>
       <div class="grid md:grid-cols-3 md:gap-6 grid-cols-1 mt-3">
         <div
           v-for="post in sortedPosts"
           :key="post.id"
-          class="border border-current p-3"
+          class="border border-current hover:shadow-xl hover:border-indigo-600 hover:mt-12"
           style="display: inline-table"
         >
-          <h3 class="mt-0">
-            <a :href="`blog/${post.slug}`">{{ post.title.rendered }}</a>
-          </h3>
-          <small>{{ post.date | dateformat }}</small>
-          <div v-html="post.excerpt.rendered"></div>
-          <button
-            class="text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 p-3"
-          >
-            <a :href="`blog/${post.slug}`">Lire ⟶</a>
-          </button>
+          <div v-if="post.cover">
+            <img :src="post.cover" alt="" srcset="" />
+          </div>
+          <div class="p-3">
+            <h3 class="mt-6 mb-3">
+              <a :href="`blog/${post.slug}`">{{ post.title.rendered }}</a>
+            </h3>
+            <small>{{ post.date | dateformat }}</small>
+            <div v-html="post.excerpt.rendered"></div>
+            <button
+              class="text-white bg-indigo-600 hover:bg-indigo-700 hover:border-white p-3"
+            >
+              <a :href="`blog/${post.slug}`">Lire ⟶</a>
+            </button>
+          </div>
         </div>
       </div>
     </div>

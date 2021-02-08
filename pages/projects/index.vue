@@ -9,15 +9,6 @@
         class="bg-transparent w-full p-3 placeholder-current border-current leading-6 border"
         placeholder="🔍 Frameworks, skills ..."
       />
-      <!-- <div class="flex justify-between mt-6">
-        <button
-          v-for="tag in projectsTags"
-          :key="tag.id"
-          class="text-white rounded-full bg-blue-400 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 px-3 py-1"
-        >
-          {{ tag.name }}
-        </button>
-      </div> -->
       <div
         v-if="filteredProjects.length > 0"
         class="grid md:gap-6 grid-cols-1 mt-3"
@@ -25,32 +16,34 @@
         <div
           v-for="project in filteredProjects"
           :key="project.id"
-          class="border border-current p-3 my-3 md:my-0"
+          class="border border-current my-3 md:my-0"
         >
-          <h3 class="mt-1">
-            <a :href="`projects/${project.slug}`">{{
-              project.title.rendered
-            }}</a>
-          </h3>
-          <div class="flex items-center">
-            <div class="w-3/4" v-html="project.excerpt.rendered"></div>
-            <div class="w-1/8">
-              <button
-                v-for="tag in project.tags"
-                :key="tag.id"
-                class="text-white rounded-full bg-blue-400 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 px-3 py-1"
-              >
-                {{ tag.name }}
-              </button>
+          <img :src="project.cover" alt="" srcset="" class="w-full" />
+          <div class="p-3">
+            <h3 class="mt-1">
+              <a :href="`projects/${project.slug}`">{{
+                project.title.rendered
+              }}</a>
+            </h3>
+            <div class="flex items-center">
+              <div class="w-3/4" v-html="project.excerpt.rendered"></div>
+              <div class="w-1/8">
+                <button
+                  v-for="tag in project.tags"
+                  :key="tag.id"
+                  class="text-white rounded-full bg-blue-400 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 px-3 py-1"
+                >
+                  {{ tag.name }}
+                </button>
+              </div>
             </div>
-          </div>
-          <button
-            class="text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 p-3"
-          >
-            <a :href="`projects/${project.slug}`" class="readmore slide"
-              >En savoir plus ⟶</a
+
+            <button
+              class="text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 p-3"
             >
-          </button>
+              <a :href="`/projects/${project.slug}`">En savoir plus ⟶</a>
+            </button>
+          </div>
         </div>
       </div>
       <div v-else>

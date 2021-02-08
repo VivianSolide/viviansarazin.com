@@ -4,7 +4,7 @@
       src="vivian-sarazin.jpg"
       alt="Vivian Sarazin"
       srcset=""
-      class="rounded-full md:w-1/2"
+      class="rounded-full md:w-1/2 shadow-md"
     />
     <h1 class="mt-12">Vivian Sarazin</h1>
     <p>

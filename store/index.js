@@ -1,5 +1,21 @@
 const siteURL = 'https://blog.viviansarazin.com/'
 
+async function populateCover(posts) {
+  for (let i = 0; i < posts.length; i++) {
+    if (posts[i]._links['wp:featuredmedia']) {
+      const temp = posts[i]._links['wp:featuredmedia']
+      const media = temp[0].href
+      const imgUrl = await fetch(media)
+        .then((res) => res.json())
+        .then((data) => data.guid.rendered)
+        .catch((err) => err)
+
+      posts[i].cover = imgUrl
+    }
+  }
+  return posts
+}
+
 export const state = () => ({
   posts: [],
   tags: [],
@@ -33,7 +49,7 @@ export const actions = {
 
       posts = posts
         .filter((el) => el.status === 'publish')
-        .map(({ id, slug, title, excerpt, date, tags, content }) => ({
+        .map(({ id, slug, title, excerpt, date, tags, content, _links }) => ({
           id,
           slug,
           title,
@@ -41,7 +57,10 @@ export const actions = {
           date,
           tags,
           content,
+          _links,
         }))
+
+      posts = await populateCover(posts)
 
       commit('updatePosts', posts)
     } catch (err) {
@@ -81,7 +100,7 @@ export const actions = {
 
       projects = projects
         .filter((el) => el.status === 'publish')
-        .map(({ id, slug, title, excerpt, date, tags, content }) => ({
+        .map(({ id, slug, title, excerpt, date, tags, content, _links }) => ({
           id,
           slug,
           title,
@@ -89,7 +108,10 @@ export const actions = {
           date,
           tags,
           content,
+          _links,
         }))
+
+      projects = await populateCover(projects)
 
       commit('updateProjects', projects)
     } catch (err) {
