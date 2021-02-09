@@ -28,8 +28,19 @@ body {
   line-height: 1.75;
 }
 
-p {
-  /* margin-bottom: 1rem; */
+.light-mode {
+  @apply bg-white;
+  @apply text-gray-700;
+}
+
+.dark-mode {
+  @apply bg-gray-900;
+  @apply text-gray-200;
+}
+
+.sepia-mode {
+  @apply bg-orange-200;
+  @apply text-orange-900;
 }
 
 h1,

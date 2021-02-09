@@ -94,25 +94,8 @@ export default {
   },
   methods: {
     toggleMenu() {
-      console.log('toto')
       this.open = !this.open
     },
   },
 }
 </script>
-<style>
-.light-mode {
-  @apply bg-white;
-  @apply text-gray-700;
-}
-
-.dark-mode {
-  @apply bg-gray-900;
-  @apply text-gray-200;
-}
-
-.sepia-mode {
-  @apply bg-orange-200;
-  @apply text-orange-900;
-}
-</style>
