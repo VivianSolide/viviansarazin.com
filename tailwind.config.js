@@ -3,7 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   theme: {
     fontFamily: {
-      display: ['Consolas', 'serif'],
+      display: ['Inconsolata', 'serif'],
       sans: ['Rubik', ...defaultTheme.fontFamily.sans],
     },
     darkSelector: '.dark-mode',

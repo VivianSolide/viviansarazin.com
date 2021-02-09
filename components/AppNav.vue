@@ -81,6 +81,17 @@ export default {
       open: false,
     }
   },
+  head() {
+    return {
+      link: [
+        {
+          hid: 'favicon',
+          name: 'favicon',
+          href: '/favicon.ico',
+        },
+      ],
+    }
+  },
   computed: {
     stroke() {
       if (this.$nuxt.$colorMode.value === 'dark') {

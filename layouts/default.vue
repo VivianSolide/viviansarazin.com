@@ -46,7 +46,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Consolas', sans-serif;
+  font-family: 'Inconsolata', sans-serif;
   font-weight: 400;
   line-height: 1;
 }
