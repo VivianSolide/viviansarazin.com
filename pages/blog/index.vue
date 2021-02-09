@@ -2,7 +2,7 @@
   <div>
     <app-masthead tagline="Blog"></app-masthead>
     <div class="hidden md:block w-64 pl-6 my-2 fixed">
-      <h3>Catégories</h3>
+      <h3 class="mb-2">Catégories</h3>
       <div
         v-for="tag in tags"
         :key="tag.id"
@@ -23,7 +23,7 @@
         <div
           v-for="post in sortedPosts"
           :key="post.id"
-          class="border border-current hover:shadow-xl hover:border-indigo-600 hover:mt-12"
+          class="border border-current hover:shadow-xl hover:border-indigo-600 mt-3"
           style="display: inline-table"
         >
           <div v-if="post.cover">
@@ -38,7 +38,7 @@
             <small>{{ post.date | dateformat }}</small>
             <div v-html="post.excerpt.rendered"></div>
             <button
-              class="text-white bg-indigo-600 hover:bg-indigo-700 hover:border-white p-3"
+              class="text-white md:w-1/2 w-full bg-indigo-600 hover:bg-indigo-700 hover:border-white p-3"
             >
               <NuxtLink :to="`blog/${post.slug}`">Lire ⟶</NuxtLink>
             </button>
