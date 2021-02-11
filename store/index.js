@@ -60,8 +60,6 @@ export const actions = {
           _links,
         }))
 
-      posts = await populateCover(posts)
-
       commit('updatePosts', posts)
     } catch (err) {
       return new Error(err)
@@ -110,6 +108,8 @@ export const actions = {
           content,
           _links,
         }))
+
+      console.log(projects)
 
       projects = await populateCover(projects)
 
