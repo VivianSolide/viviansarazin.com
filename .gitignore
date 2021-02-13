@@ -92,3 +92,4 @@ sw.*
 
 # Jest snapshots
 pages/__snapshots__
+pages/__image_snapshots__

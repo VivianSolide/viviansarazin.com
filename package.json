@@ -12,7 +12,8 @@
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore . --fix",
     "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style",
-    "test": "jest",
+    "test": "yarn test:jest",
+    "test:jest": "jest",
     "postinstall": "husky install"
   },
   "dependencies": {
@@ -46,6 +47,7 @@
     "eslint-plugin-vue": "^7.5.0",
     "husky": "^5.0.9",
     "jest": "^26.6.3",
+    "jest-image-snapshot": "^4.3.0",
     "lint-staged": "^10.5.3",
     "prettier": "^2.2.1",
     "rewire": "^5.0.0",
@@ -53,6 +55,7 @@
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",
     "tailwindcss-dark-mode": "^1.1.7",
+    "vue-file-loader": "^0.0.1",
     "vue-jest": "^3.0.4"
   }
 }
