@@ -93,3 +93,7 @@ sw.*
 # Jest snapshots
 pages/__snapshots__
 pages/__image_snapshots__
+
+# Storybook folders
+.nuxt-storybook
+storybook-static

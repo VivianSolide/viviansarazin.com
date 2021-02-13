@@ -39,10 +39,17 @@ export default {
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode',
+    // '@nuxtjs/color-mode',
   ],
 
   modules: ['@nuxtjs/robots', '@nuxtjs/sitemap', '@nuxtjs/google-fonts'],
+
+  storybook: {
+    addons: ['storybook-addon-designs'],
+    modules: {
+      exclude: ['@nuxtjs/color-mode'],
+    },
+  },
 
   googleFonts: {
     families: {
