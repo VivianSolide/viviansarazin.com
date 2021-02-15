@@ -12,7 +12,7 @@
         <nuxt-link to="/projects"> <p class="m-2">Projets</p></nuxt-link>
       </div>
       <div class="hidden md:flex">
-        <!-- <select
+        <select
           v-model="$colorMode.preference"
           class="form-select border border-current rounded bg-transparent"
         >
@@ -20,7 +20,7 @@
           <option value="light">Light</option>
           <option value="dark">Dark</option>
           <option value="sepia">Sepia</option>
-        </select> -->
+        </select>
       </div>
       <!-- mobile menu -->
       <div class="flex md:hidden mx-2">
@@ -55,7 +55,7 @@
         <nuxt-link to="/projects"> <p class="m-2">Projets</p></nuxt-link>
       </div>
       <div class="flex items-center">
-        <!-- <select
+        <select
           v-model="$colorMode.preference"
           class="form-select border border-current rounded bg-transparent m-2"
         >
@@ -63,7 +63,7 @@
           <option value="light">Light</option>
           <option value="dark">Dark</option>
           <option value="sepia">Sepia</option>
-        </select> -->
+        </select>
       </div>
     </div>
   </div>

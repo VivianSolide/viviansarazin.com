@@ -94,8 +94,6 @@ export const actions = {
           _links,
         }))
 
-      console.log(projects)
-
       projects = await populateCover(projects)
 
       commit('updateProjects', projects)
