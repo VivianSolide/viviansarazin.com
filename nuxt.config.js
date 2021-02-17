@@ -39,12 +39,13 @@ export default {
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode',
+    // '@nuxtjs/color-mode',
   ],
 
   modules: ['@nuxtjs/robots', '@nuxtjs/sitemap', '@nuxtjs/google-fonts'],
 
   storybook: {
+    stories: ['~/stories/**/*.stories.js'],
     addons: ['storybook-addon-designs'],
   },
 

@@ -1,10 +1,9 @@
 module.exports = {
   verbose: true,
-  moduleFileExtensions: ['js', 'json', 'vue', 'png'],
+  moduleFileExtensions: ['js', 'json', 'vue', 'png', 'jpg', 'jpeg'],
   transform: {
-    // process `*.vue` files with `vue-jest`
     '.*\\.(vue)$': 'vue-jest',
     '.*\\.(js)$': 'babel-jest',
-    '.*\\.(png)$': 'vue-file-loader',
+    '.*\\.(png|jpg|jpeg)$': 'vue-file-loader',
   },
 }

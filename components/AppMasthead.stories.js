@@ -1,17 +1,17 @@
 import { withDesign } from 'storybook-addon-designs'
-import AppFooter from './AppFooter'
+import AppMasthead from './AppMasthead'
 
 export default {
-  title: 'AppFooter',
+  title: 'AppMasthead',
   decorators: [withDesign],
 }
 
-export const Footer = () => ({
-  template: '<AppFooter />',
-  components: { AppFooter },
+export const Header = () => ({
+  template: '<AppMasthead />',
+  components: { AppMasthead },
 })
 
-Footer.parameters = {
+Header.parameters = {
   design: {
     type: 'figma',
     url:
