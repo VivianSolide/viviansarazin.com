@@ -1,17 +1,17 @@
 import { withDesign } from 'storybook-addon-designs'
-import AppMasthead from './AppMasthead'
+import AppNav from './AppNav'
 
 export default {
-  title: 'AppMasthead',
+  title: 'AppNav',
   decorators: [withDesign],
 }
 
-export const Jumbo = () => ({
-  template: '<AppMasthead />',
-  components: { AppMasthead },
+export const Nav = () => ({
+  template: '<AppNav />',
+  components: { AppNav },
 })
 
-Jumbo.parameters = {
+Nav.parameters = {
   design: {
     type: 'figma',
     url:
