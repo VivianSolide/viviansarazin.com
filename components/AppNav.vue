@@ -13,7 +13,7 @@
       </div>
       <div class="hidden md:flex">
         <select
-          v-if="$colormode"
+          v-if="$colorMode && $colorMode.preference"
           v-model="$colorMode.preference"
           class="form-select border border-current rounded bg-transparent"
         >
@@ -55,8 +55,9 @@
         <nuxt-link to="/blog"> <p class="m-2">Blog</p></nuxt-link>
         <nuxt-link to="/projects"> <p class="m-2">Projets</p></nuxt-link>
       </div>
-      <div v-if="$colormode" class="flex items-center">
+      <div v-if="$nuxt.$colormode" class="flex items-center">
         <select
+          v-if="$colorMode && $colorMode.preference"
           v-model="$colorMode.preference"
           class="form-select border border-current rounded bg-transparent m-2"
         >

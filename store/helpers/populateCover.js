@@ -5,7 +5,7 @@ async function populateCover(posts) {
       const media = temp[0].href
       const imgUrl = await fetch(media)
         .then((res) => res.json())
-        .then((data) => data.guid.rendered.replace('http', 'https'))
+        .then((data) => data.guid.rendered)
         .catch((err) => err)
 
       posts[i].cover = imgUrl

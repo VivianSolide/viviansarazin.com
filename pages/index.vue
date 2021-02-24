@@ -32,7 +32,6 @@
     <p>
       Pêle-mêle, voici une liste des technologies que j'apprécie. Liste non
       exhaustive en constante évolution.
-      <i>Oui, à un moment je pensais que Bootstrap c'était le boss de fin...</i>
     </p>
     <h3>Data</h3>
     <div class="grid grid-cols-2 gap-4">
@@ -76,12 +75,14 @@
         </p>
       </div>
       <div class="md:col-span-1 col-span-2">
-        <h4>Django</h4>
+        <h4>Fast API</h4>
         <p>
-          Autre salle, autre ambiance, Django est un framework plutôt puissant.
-          Je ne l'ai pas encore poussé en production, mais j'apprécie beaucoup
-          toutes les fonctionnalités permises et l'aspect configuration.
+          Autre salle, autre ambiance, Fast API est un framework plutôt
+          puissant. Je ne l'ai pas encore poussé en production, mais j'apprécie
+          beaucoup toutes les fonctionnalités permises et l'aspect
+          configuration.
         </p>
+        <p>C'est d'ailleurs un projet que je soutiens via GitHub sponsor.</p>
       </div>
       <div class="md:col-span-1 col-span-2">
         <h4>Strapi</h4>

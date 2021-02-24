@@ -43,6 +43,16 @@ body {
   @apply text-orange-900;
 }
 
+figure,
+img {
+  text-align: center;
+  margin: 0 auto;
+}
+
+iframe {
+  max-width: 100%;
+}
+
 h1,
 h2,
 h3 {
@@ -78,5 +88,9 @@ h5 {
 small,
 .text_small {
   font-size: 0.8rem;
+}
+
+ol {
+  list-style: lower-roman;
 }
 </style>
