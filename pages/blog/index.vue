@@ -31,7 +31,7 @@
           </div>
           <div class="p-3">
             <h3 class="mt-6 mb-3">
-              <NuxtLink :to="`blog/${post.slug}`">{{
+              <NuxtLink :to="`/blog/${post.slug}`">{{
                 post.title.rendered
               }}</NuxtLink>
             </h3>
