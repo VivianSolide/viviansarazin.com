@@ -8,8 +8,8 @@
         <nuxt-link exact to="/">
           <app-icon :stroke="stroke" class="m-2"></app-icon>
         </nuxt-link>
-        <nuxt-link to="/blog"> <p class="pl-6 m-2">Blog</p></nuxt-link>
-        <nuxt-link to="/projects"> <p class="m-2">Projets</p></nuxt-link>
+        <nuxt-link to="/blog/"> <p class="pl-6 m-2">Blog</p></nuxt-link>
+        <nuxt-link to="/projects/"> <p class="m-2">Projets</p></nuxt-link>
       </div>
       <div class="hidden md:flex">
         <select
