@@ -1,5 +1,5 @@
 import { populateCover } from './helpers/populateCover'
-const siteURL = 'https://blog.viviansarazin.com/'
+const siteURL = 'https://blog.viviansarazin.com'
 
 export const state = () => ({
   posts: [],
