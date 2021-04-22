@@ -6,8 +6,12 @@ async function populateCover(posts) {
       const imgUrl = await fetch(media)
         .then((res) => res.json())
         .then((data) => {
-          const imgUrl = data.guid.rendered.replace('http', 'https')
-          return imgUrl
+          const temp = data.guid.rendered
+          if (data.guid.rendered.includes('https')) {
+            return temp
+          } else {
+            return temp.replace('http', 'https')
+          }
         })
         .catch((err) => err)
 
