@@ -27,6 +27,7 @@
           style="display: inline-table"
         >
           <div v-if="post.cover">
+            <p>{{ post.cover }}</p>
             <img :src="post.cover" alt="" srcset="" />
           </div>
           <div class="p-3">
