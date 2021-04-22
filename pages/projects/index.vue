@@ -18,12 +18,7 @@
           :key="project.id"
           class="border border-current my-3 md:my-0"
         >
-          <img
-            :src="project.cover.replace('http', 'https')"
-            alt=""
-            srcset=""
-            class="w-full"
-          />
+          <img :src="project.cover" alt="" srcset="" class="w-full" />
           <div class="p-3">
             <h3 class="mt-1">
               <NuxtLink :to="`${project.slug}`">{{
