@@ -21,7 +21,7 @@
           <img :src="project.cover" alt="" srcset="" class="w-full" />
           <div class="p-3">
             <h3 class="mt-1">
-              <NuxtLink :to="`projects/${project.slug}`">{{
+              <NuxtLink :to="`/${project.slug}`">{{
                 project.title.rendered
               }}</NuxtLink>
             </h3>
@@ -41,9 +41,7 @@
             <button
               class="text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 p-3"
             >
-              <NuxtLink :to="`/projects/${project.slug}`"
-                >En savoir plus ⟶</NuxtLink
-              >
+              <NuxtLink :to="`/${project.slug}`">En savoir plus ⟶</NuxtLink>
             </button>
           </div>
         </div>
