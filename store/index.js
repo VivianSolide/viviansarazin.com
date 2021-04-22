@@ -95,9 +95,7 @@ export const actions = {
           content,
           _links,
         }))
-
       projects = await populateCover(projects)
-
       commit('updateProjects', projects)
     } catch (err) {
       return new Error(err)
