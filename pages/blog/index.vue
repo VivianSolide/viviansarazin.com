@@ -31,7 +31,7 @@
           </div>
           <div class="p-3">
             <h3 class="mt-6 mb-3">
-              <NuxtLink :to="`/${post.slug}`">{{
+              <NuxtLink :to="`${post.slug}`">{{
                 post.title.rendered
               }}</NuxtLink>
             </h3>
@@ -40,7 +40,7 @@
             <button
               class="text-white md:w-1/2 w-full bg-indigo-600 hover:bg-indigo-700 hover:border-white p-3"
             >
-              <NuxtLink :to="`/${post.slug}`">Lire ⟶</NuxtLink>
+              <NuxtLink :to="`${post.slug}`">Lire ⟶</NuxtLink>
             </button>
           </div>
         </div>
