@@ -27,7 +27,8 @@
           style="display: inline-table"
         >
           <div v-if="post.cover">
-            <img :src="post.cover.replace('http', 'https')" alt="" srcset="" />
+            <p>{{ post.cover }}</p>
+            <img :src="post.cover" alt="" srcset="" />
           </div>
           <div class="p-3">
             <h3 class="mt-6 mb-3">
