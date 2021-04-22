@@ -57,7 +57,7 @@ export default {
     display: 'swap',
   },
   sitemap: {
-    hostname: 'https://www.viviansarazin.com',
+    hostname: 'https://viviansarazin.com',
   },
   /*
    ** Build configuration
