@@ -1,6 +1,16 @@
 ---
 title: 'PREST by SOGEPROM'
 description: 'A business search engine'
-stack: ['NuxtJS', 'Composition API', 'Typescript']
+stack: ['NuxtJS', 'Composition', 'Typescript']
+imgSrc: '/assets/projects/sogeprom/cover.png'
 ---
-# Sogeprom
+::Intro{heading="PREST by SOGEPROM" imgSrc="/assets/projects/sogeprom/cover.png"}
+::
+
+For this website, I used the following technologies:
+- **Frontend**
+  - Framework: NuxtJS
+  - CSS: TailwindCSS
+- **Backend**
+  - Framework: FastAPI
+  - Database: PostgreSQL

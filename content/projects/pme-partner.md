@@ -1,8 +1,17 @@
 ---
 title: 'PME Partner'
 description: 'A business website'
-stack: ['Gridsome', 'Composition API', 'GraphQL']
----
-# PME Partner
+stack: ['Gridsome', 'Composition', 'GraphQL']
+imgSrc: '/assets/projects/pme-partner/cover.png'
 
-## Un vrai casse-couilles
+---
+::Intro{heading="PME Partner" imgSrc="/assets/projects/pme-partner/cover.png" url="https://pme-partner.com"}
+::
+
+For this website, I used the following technologies:
+- **Frontend**
+  - Framework: Gridsome
+  - CSS: TailwindCSS
+- **Backend**
+  - CMS: Wordpress
+  - API: GraphQL

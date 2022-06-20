@@ -1,6 +1,6 @@
 <template >
-  <div class="bg-indigo-50 lg:min-h-screen">
-    <div class="lg:max-w-screen-2xl mx-auto prose ">
+  <div class="bg-indigo-50 lg:min-h-screen pb-16">
+    <div class="px-4 md:max-w-screen-xl mx-auto prose">
       <slot />
     </div>
   </div>

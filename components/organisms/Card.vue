@@ -10,6 +10,10 @@ const props = defineProps({
         type: String,
         required: true,
     },
+    imgSrc: {
+        type: String,
+        required: true,
+    },  
     excerpt: {
         type: String,
         required: true,
@@ -23,7 +27,7 @@ const props = defineProps({
 <template>
     <div class="border shadow-lg">
         <NuxtLink :to="path">
-            <Intro :heading="heading" />
+            <Intro :heading="heading" :imgSrc="imgSrc" />
         </NuxtLink>
         <Excerpt :excerpt="excerpt" :tags="tags" />
     </div>
