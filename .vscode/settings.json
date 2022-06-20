@@ -1,8 +1,0 @@
-{
-    "python.testing.promptToConfigure": false,
-    "python.testing.pytestEnabled": false,
-    "python.testing.unittestEnabled": false,
-    "python.testing.nosetestsEnabled": false,
-    "ponicode.testSettings.testLocation.locationType": "Same folder as source file",
-    "ponicode.testSettings.testLocation.path": "{rootDir}/{filePath}/{fileName}.test.{ext}"
-}
