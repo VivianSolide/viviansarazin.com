@@ -7,7 +7,7 @@ const props = defineProps({
 })
 </script>
 <template>
-    <p class="bg-green-100 border border-green-300 rounded-2xl py-2 px-4">
+    <p class="bg-indigo-100 border border-indigo-300 rounded-2xl py-1 px-4 text-sm">
         {{ chip }}
     </p>
 </template>

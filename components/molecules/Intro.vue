@@ -4,12 +4,16 @@ const props = defineProps({
     heading: {
         type: String,
         required: true,
+    },
+    imgSrc: {
+        type: String,
+        required: true,
     }
 })
 </script>
 <template>
     <div class="relative">
-        <img src="https://blog.vacancesweb.be/wp-content/uploads/2021/09/chan_copy1.jpg" class="m-0" alt="" srcset="">
-        <Heading :heading="heading" class=" text-white rounded-3xl px-4  absolute bottom-4 left-2" />
+        <img :src="imgSrc" class="!m-0">
+        <Heading :heading="heading" class="text-white rounded-3xl px-4 bg-indigo-500 absolute bottom-1 left-1" :order="4" />
     </div>
 </template>
