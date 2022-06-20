@@ -12,5 +12,8 @@
     "@nuxtjs/tailwindcss": "^5.1.2",
     "@tailwindcss/typography": "^0.5.2",
     "nuxt": "3.0.0-rc.4"
+  },
+  "engines": {
+    "node": ">=16.15.1"
   }
 }
