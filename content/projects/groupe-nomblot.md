@@ -1,7 +1,7 @@
 ---
 title: 'Groupe Nomblot'
 description: 'E-commerce website for cars and after sales'
-stack: ['NuxtJS', 'Composition', 'Typescript']
+stack: ['NuxtJS', 'Composition', 'Typescript', 'RabbitMQ', 'NestJS' , 'GitLab', 'ClickUp', 'Cypress']
 imgSrc: '/assets/projects/groupe-nomblot/cover.png'
 ---
 ::Intro{heading="Groupe Nomblot" imgSrc="/assets/projects/groupe-nomblot/cover.png" url="https://groupe-nomblot.com"}

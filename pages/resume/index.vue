@@ -27,20 +27,13 @@ const codingYears = computeDiffYears(ironHackStartDate, now)
     <!-- Basics -->
     <Heading heading="Vivian SARAZIN" class="pt-16" :order="1" />
     <div class="grid md:grid-cols-2">
-      <div class="flex flex-col justify-around">
+      <div class="flex flex-col ">
         <Heading heading="Basics" />
         <p>He/his</p>
         <p>{{ years }} y/o</p>
         <p>Living in {{ data.basics.location.city }}, France</p>
         <p>Around {{ codingYears }} coding years</p>
         <p>Looking for a Vue/Nuxt challenge</p>
-      </div>
-      <div>
-        <iframe style="border-radius:12px"
-          src="https://open.spotify.com/embed/playlist/0PlELr4gwTF9FeoDWzOs38?utm_source=generator&theme=0" width="100%"
-          height="380" frameBorder="0"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-        </iframe>
       </div>
     </div>
     <!-- Positions -->
