@@ -3,7 +3,7 @@ import Chip from '@/components/atoms/Chip.vue'
 definePageMeta({
   layout: "index",
 });
-const { data } = await useAsyncData('hello', () => queryContent('/').findOne())
+const { data } = await useAsyncData('index', () => queryContent('/').findOne())
 </script>
 <template>
   <div class="flex flex-col-reverse lg:flex-row lg:justify-between lg:pt-32">
@@ -18,6 +18,6 @@ const { data } = await useAsyncData('hello', () => queryContent('/').findOne())
         </NuxtLink>
       </div>
     </div>
-    <img src="~/public/assets/images/profile.jpeg" class="lg:ml-8 rounded-full" alt="Vivian SARAZIN profile pic">
+    <img src="~/assets/images/profile.jpeg" class="lg:ml-8 rounded-full" alt="Vivian SARAZIN profile pic">
   </div>
 </template>
