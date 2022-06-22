@@ -3,14 +3,14 @@ import Heading from '@/components/atoms/Heading.vue'
 import Card from '@/components/organisms/Card.vue'
 
 definePageMeta({
-  layout: "index",
+  layout: "full",
 });
 
 const { data } = await useAsyncData('projects', () => queryContent('/projects').find())
 </script>
 <template>
   <!-- Heading -->
-  <Heading heading="Projects" :order="1" class="pt-16" />
+  <Heading heading="Projects" :order="1" />
   <!-- Projects -->
   <ContentRenderer :value="data">
     <div class="grid md:grid-cols-2 md:gap-x-8 gap-y-2">

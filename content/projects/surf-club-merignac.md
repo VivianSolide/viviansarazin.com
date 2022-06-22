@@ -1,7 +1,7 @@
 ---
 title: 'Surf Club Merignac'
 description: 'A non-profit web app'
-stack: ['NuxtJS', 'Options API', 'Javascript']
+stack: ['NuxtJS', 'Options API', 'Javascript', 'Strapi', 'GitLab', 'Cypress']
 imgSrc: '/assets/projects/surf-club-merignac/cover.png'
 ---
 ::Intro{heading="Groupe Nomblot" imgSrc="/assets/projects/groupe-nomblot/cover.png" url="https://groupe-nomblot.com"}

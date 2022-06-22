@@ -1,7 +1,7 @@
 ---
 title: 'PME Partner'
 description: 'A business website'
-stack: ['Gridsome', 'Composition', 'GraphQL']
+stack: ['Gridsome', 'Composition', 'GraphQL', 'Wordpress']
 imgSrc: '/assets/projects/pme-partner/cover.png'
 
 ---

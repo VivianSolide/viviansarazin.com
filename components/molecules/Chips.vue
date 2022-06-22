@@ -9,5 +9,7 @@ const props = defineProps({
 })
 </script>
 <template>
-    <Chip v-for="(chip, i) in chips" :key="i" :chip="chip" />
+    <div class="flex flex-wrap gap-x-2">
+        <Chip v-for="(chip, i) in chips" :key="i" :chip="chip" />
+    </div>
 </template>
