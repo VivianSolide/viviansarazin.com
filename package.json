@@ -4,15 +4,21 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "test:unit": "vitest"
   },
   "devDependencies": {
     "@nuxt/content": "^2.0.1",
+    "@nuxt/test-utils-edge": "^3.0.0-rc.4-27588443.cf25525",
     "@nuxtjs/tailwindcss": "^5.1.2",
     "@tailwindcss/typography": "^0.5.2",
+    "axios": "^0.27.2",
+    "jsdom": "^20.0.0",
     "nuxt": "3.0.0-rc.4",
+    "playwright": "^1.22.2",
     "prettier": "^2.7.1",
-    "prettier-plugin-tailwindcss": "^0.1.11"
+    "prettier-plugin-tailwindcss": "^0.1.11",
+    "vitest": "^0.15.2"
   },
   "engines": {
     "node": ">=16"
