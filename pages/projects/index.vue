@@ -7,7 +7,6 @@ const { data } = await useAsyncData('projects', () => queryContent('/projects').
 
 <template>
   <div>
-
     <!-- Heading -->
     <Heading heading="Projects" :order="1" />
     <!-- Projects -->
