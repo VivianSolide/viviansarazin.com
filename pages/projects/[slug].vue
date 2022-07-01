@@ -1,10 +1,9 @@
 <script lang='ts' setup>
-definePageMeta({
-    layout: 'full',
-})
+const { slug } = useRoute().params
 </script>
+
 <template>
-    <main>
-        <ContentDoc  />
-    </main>
+  <div>
+    <ContentDoc :path="`/projects/${slug}`" />
+  </div>
 </template>

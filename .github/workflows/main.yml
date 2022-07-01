@@ -2,9 +2,9 @@ name: Runs All Unit tests
 
 on:
   push:
-    branches: ["master"]
+    branches: [master]
   pull_request:
-    branches: ["master"]
+    branches: [master]
 
   workflow_dispatch:
 
@@ -22,7 +22,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "yarn"
+          cache: yarn
       - run: yarn install
       - run: yarn build
       - run: yarn test:unit
