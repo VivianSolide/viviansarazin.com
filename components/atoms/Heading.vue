@@ -7,10 +7,13 @@ const props = defineProps({
   order: {
     type: Number,
     required: false,
-    default: 2
-  }
+    default: 2,
+  },
 })
 </script>
+
 <template>
-  <Component :is="`h${order}`">{{ heading }}</Component>
+  <Component :is="`h${order}`">
+    {{ heading }}
+  </Component>
 </template>

@@ -1,214 +1,214 @@
 {
-    "basics": {
-        "name": "Vivian",
-        "picture": "https://avataaar.welovedevs.com/png/?accessoriesType=Prescription02&clotheColor=W3D&clotheType=GraphicShirt&eyeType=Default&eyebrowType=DefaultNatural&facialHairType=Blank&hairColor=Brown&mouthType=Twinkle&skinColor=Light&topType=ShortHairDreads01&graphicType=W3DLogo",
-        "title": "Fullstack developer",
-        "summary": "Fullstack-developer",
-        "location": {
-            "locationCountryCode": "FR",
-            "city": "Gouesnac'h"
-        },
-        "profiles": []
+  "basics": {
+    "name": "Vivian",
+    "picture": "https://avataaar.welovedevs.com/png/?accessoriesType=Prescription02&clotheColor=W3D&clotheType=GraphicShirt&eyeType=Default&eyebrowType=DefaultNatural&facialHairType=Blank&hairColor=Brown&mouthType=Twinkle&skinColor=Light&topType=ShortHairDreads01&graphicType=W3DLogo",
+    "title": "Fullstack developer",
+    "summary": "Fullstack-developer",
+    "location": {
+      "locationCountryCode": "FR",
+      "city": "Gouesnac'h"
     },
-    "work": [
-        {
-            "name": "Freelance",
-            "position": "Fullstack developer",
-            "index": 0,
-            "startDate": "2020-01-01",
-            "summary": "<p>Languages: Javascript/Typescript and Python</p><p>Frontend: VueJS, NuxtJS and Svelte</p><p>Backend: NestJS and FastAPI</p><p>CMS: Strapi and Wordpress</p><p>Project management: ClickUp</p><p>IDE: VSCode</p><p>Repositories: Azure Dev Ops, Github and Gitlab</p><p>Hosting: Digital Ocean and Netlify</p><p>Misc: Cypress, Docker, Envault, Grafana and Meilisearch</p><p>My favorite Zen: Explicit is better than implicit",
-            "location": "Gouesnac'h, France",
-            "placeId": "ChIJdZ0WiHPTEEgRNPJj341Z1Fw",
-            "id": "-N4WkT-lK-J24O_VboXh"
-        },
-        {
-            "name": "OCUS",
-            "position": "Growth Engineer",
-            "index": 1,
-            "startDate": "2019-06-01",
-            "endDate": "2019-12-01",
-            "summary": "<ul><li>NuxtJS</li><li>VueJS</li><li>React</li><li>Docker</li></ul>",
-            "location": "Paris, France",
-            "placeId": "ChIJD7fiBh9u5kcRYJSMaMOCCwQ",
-            "id": "-N4WkhbaGgVI4XJW8nED"
-        },
-        {
-            "name": "Hubstairs",
-            "position": "Web developer",
-            "index": 2,
-            "startDate": "2018-12-01",
-            "endDate": "2019-06-01",
-            "summary": "<ul><li>React</li><li>Express</li><li>Rancher</li><li>Docker</li></ul>",
-            "location": "Bordeaux, France",
-            "placeId": "ChIJgcpR9-gnVQ0RiXo5ewOGY3k",
-            "id": "-N4WkoFXAkKeRhyXgXDj"
-        },
-        {
-            "name": "Ironhack",
-            "position": "Teacher assistant",
-            "index": 3,
-            "startDate": "2018-05-01",
-            "endDate": "2018-10-01",
-            "summary": "<ul><li>Workshops</li><li>Debugging</li><li>Mentoring</li></ul>",
-            "location": "Berlin, Germany",
-            "placeId": "ChIJAVkDPzdOqEcRcDteW0YgIQQ",
-            "id": "-N4WkveQez8BTHrrMo9W"
-        }
-    ],
-    "education": [
-        {
-            "id": "-N4WkFuOJ4GIewUONnBk",
-            "institution": "Le Wagon",
-            "location": "Bordeaux, France",
-            "index": 1,
-            "studyType": "Bootcamp data .py",
-            "endDate": "2021-01-01",
-            "summary": "<ul><li>Python</li><li>SQL</li><li>Data Science</li></ul>"
-        },
-        {
-            "id": "-N4WkE7A2DVs8gLjihF2",
-            "institution": "Ironhack",
-            "location": "Paris, France",
-            "index": 0,
-            "studyType": "Bootcamp web .js",
-            "endDate": "2018-01-01",
-            "summary": "<ul><li>Javascript</li><li>MongoDB</li><li>Vue</li></ul>"
-        },
-        {
-            "id": "-N4WkKZnt_zLlranAsOF",
-            "institution": "IFAG",
-            "location": "Lyon, France",
-            "index": 2,
-            "studyType": "Master II Entrepreunariat",
-            "endDate": "2014-01-01",
-            "summary": "<ul><li>Marketing</li><li>Sales</li><li>HR</li></ul>"
-        }
-    ],
-    "skills": [
-        {
-            "id": "984d0d69-05c3-4b33-9116-e0a6f36b3501",
-            "name": "NuxtJS",
-            "position": 0,
-            "value": 70
-        },
-        {
-            "id": "1f20ef31-2753-4e82-8292-2ff7b2e5efd1",
-            "name": "Svelte",
-            "position": 1,
-            "value": 10
-        },
-        {
-            "id": "75f8e57e-69b5-4b2e-be42-a096633d2762",
-            "name": "Typescript",
-            "position": 2,
-            "value": 50
-        },
-        {
-            "id": "30789093-9cbc-4284-b136-da734f717ff2",
-            "name": "NodeJS",
-            "position": 4,
-            "value": 60
-        }
-    ],
-    "languages": [
-        {
-            "id": "29f7fbab-e2af-4ba1-8dd4-93f3f24755c8",
-            "name": "Français",
-            "position": 0,
-            "value": 95,
-            "language": "Français"
-        },
-        {
-            "id": "-N4WlK9W37_UlCWxfqe0",
-            "name": "English",
-            "position": 1,
-            "value": 70,
-            "language": "English"
-        },
-        {
-            "id": "bc60d815-d95f-4512-87c8-d9df13c46a98",
-            "name": "Espanol",
-            "position": 2,
-            "value": 40,
-            "language": "Espanol"
-        }
-    ],
-    "interests": [
-        {
-            "gifUrl": "https://media0.giphy.com/media/skzAE1Vo5rVkc/giphy.gif?cid=f7fb5bba10rxjd3c6c0ij94scmu8ss4tt47jalnn7oq1nskv&rid=giphy.gif&ct=g",
-            "gifUser": {
-                "isVerified": true,
-                "name": "Animation Domination High-Def",
-                "profileAvatarUrl": "https://media3.giphy.com/avatars/foxadhd/FIpJVXV5aO80.gif",
-                "profileUrl": "https://giphy.com/foxadhd/"
-            },
-            "id": "0d25b4ec-0ac9-45bc-8243-99070e516dd7",
-            "index": 0,
-            "name": "surf"
-        },
-        {
-            "gifUrl": "https://media4.giphy.com/media/26vUz4HZxF7Q0zYmk/giphy.gif?cid=f7fb5bbamy0gabcyt306w2twlvpfe6fdu6hfzpki219lq9j9&rid=giphy.gif&ct=g",
-            "gifUser": {
-                "isVerified": false,
-                "name": "Alle Farben",
-                "profileAvatarUrl": "https://media2.giphy.com/avatars/allefarbenofficial/57bIVa6HE2hp.jpg",
-                "profileUrl": "https://giphy.com/allefarbenofficial/"
-            },
-            "id": "27300519-4ec7-416f-9224-56f0a8640dd0",
-            "index": 1,
-            "name": "barbecue"
-        },
-        {
-            "gifUrl": "https://media0.giphy.com/media/tJU72w9lPzUPe/giphy.gif?cid=f7fb5bbaf04ugnhkf33zg28tkqatcg4xdu1k2zesurwo2qfh&rid=giphy.gif&ct=g",
-            "id": "446ff4ff-4db6-41e4-9f3c-aea6d75fb4d7",
-            "index": 2,
-            "name": "guitar"
-        }
-    ],
-    "projects": [],
-    "specific": {
-        "basics": {
-            "visaSponsorship": false,
-            "personalDescription": ""
-        },
-        "dreamJob": {
-            "locations": [
-                {
-                    "id": "ChIJD7fiBh9u5kcRYJSMaMOCCwQ",
-                    "index": 0,
-                    "placeId": "ChIJD7fiBh9u5kcRYJSMaMOCCwQ",
-                    "name": "Paris, France"
-                },
-                {
-                    "id": "ChIJr64TLpfVEEgR0M2iyu-FLdM",
-                    "index": 1,
-                    "placeId": "ChIJr64TLpfVEEgR0M2iyu-FLdM",
-                    "name": "Quimper, France"
-                }
-            ],
-            "salary": "60",
-            "perks": {
-                "challenge": true,
-                "salary": true
-            },
-            "remoteFrequency": "fullTime"
-        },
-        "currentJob": {},
-        "education": {
-            "studiesLevel": 5
-        },
-        "work": {
-            "contractTypes": [
-                "permanent"
-            ],
-            "codingYears": 4.5,
-            "searchState": "activelySearching",
-            "otherExperienceYears": 0,
-            "codeExperienceYears": 4
-        },
-        "sound": {
-            "embedUrl": "https://open.spotify.com/embed/playlist/0PlELr4gwTF9FeoDWzOs38?si=9315b5ddda9e4373"
-        },
-        "interestedBy": "Looking forward to work with modern frameworks such as Svelte, Nuxt"
+    "profiles": []
+  },
+  "work": [
+    {
+      "name": "Freelance",
+      "position": "Fullstack developer",
+      "index": 0,
+      "startDate": "2020-01-01",
+      "summary": "<p>Languages: Javascript/Typescript and Python</p><p>Frontend: VueJS, NuxtJS and Svelte</p><p>Backend: NestJS and FastAPI</p><p>CMS: Strapi and Wordpress</p><p>Project management: ClickUp</p><p>IDE: VSCode</p><p>Repositories: Azure Dev Ops, Github and Gitlab</p><p>Hosting: Digital Ocean and Netlify</p><p>Misc: Cypress, Docker, Envault, Grafana and Meilisearch</p><p>My favorite Zen: Explicit is better than implicit",
+      "location": "Gouesnac'h, France",
+      "placeId": "ChIJdZ0WiHPTEEgRNPJj341Z1Fw",
+      "id": "-N4WkT-lK-J24O_VboXh"
+    },
+    {
+      "name": "OCUS",
+      "position": "Growth Engineer",
+      "index": 1,
+      "startDate": "2019-06-01",
+      "endDate": "2019-12-01",
+      "summary": "<ul><li>NuxtJS</li><li>VueJS</li><li>React</li><li>Docker</li></ul>",
+      "location": "Paris, France",
+      "placeId": "ChIJD7fiBh9u5kcRYJSMaMOCCwQ",
+      "id": "-N4WkhbaGgVI4XJW8nED"
+    },
+    {
+      "name": "Hubstairs",
+      "position": "Web developer",
+      "index": 2,
+      "startDate": "2018-12-01",
+      "endDate": "2019-06-01",
+      "summary": "<ul><li>React</li><li>Express</li><li>Rancher</li><li>Docker</li></ul>",
+      "location": "Bordeaux, France",
+      "placeId": "ChIJgcpR9-gnVQ0RiXo5ewOGY3k",
+      "id": "-N4WkoFXAkKeRhyXgXDj"
+    },
+    {
+      "name": "Ironhack",
+      "position": "Teacher assistant",
+      "index": 3,
+      "startDate": "2018-05-01",
+      "endDate": "2018-10-01",
+      "summary": "<ul><li>Workshops</li><li>Debugging</li><li>Mentoring</li></ul>",
+      "location": "Berlin, Germany",
+      "placeId": "ChIJAVkDPzdOqEcRcDteW0YgIQQ",
+      "id": "-N4WkveQez8BTHrrMo9W"
     }
+  ],
+  "education": [
+    {
+      "id": "-N4WkFuOJ4GIewUONnBk",
+      "institution": "Le Wagon",
+      "location": "Bordeaux, France",
+      "index": 1,
+      "studyType": "Bootcamp data .py",
+      "endDate": "2021-01-01",
+      "summary": "<ul><li>Python</li><li>SQL</li><li>Data Science</li></ul>"
+    },
+    {
+      "id": "-N4WkE7A2DVs8gLjihF2",
+      "institution": "Ironhack",
+      "location": "Paris, France",
+      "index": 0,
+      "studyType": "Bootcamp web .js",
+      "endDate": "2018-01-01",
+      "summary": "<ul><li>Javascript</li><li>MongoDB</li><li>Vue</li></ul>"
+    },
+    {
+      "id": "-N4WkKZnt_zLlranAsOF",
+      "institution": "IFAG",
+      "location": "Lyon, France",
+      "index": 2,
+      "studyType": "Master II Entrepreunariat",
+      "endDate": "2014-01-01",
+      "summary": "<ul><li>Marketing</li><li>Sales</li><li>HR</li></ul>"
+    }
+  ],
+  "skills": [
+    {
+      "id": "984d0d69-05c3-4b33-9116-e0a6f36b3501",
+      "name": "NuxtJS",
+      "position": 0,
+      "value": 70
+    },
+    {
+      "id": "1f20ef31-2753-4e82-8292-2ff7b2e5efd1",
+      "name": "Svelte",
+      "position": 1,
+      "value": 10
+    },
+    {
+      "id": "75f8e57e-69b5-4b2e-be42-a096633d2762",
+      "name": "Typescript",
+      "position": 2,
+      "value": 50
+    },
+    {
+      "id": "30789093-9cbc-4284-b136-da734f717ff2",
+      "name": "NodeJS",
+      "position": 4,
+      "value": 60
+    }
+  ],
+  "languages": [
+    {
+      "id": "29f7fbab-e2af-4ba1-8dd4-93f3f24755c8",
+      "name": "Français",
+      "position": 0,
+      "value": 95,
+      "language": "Français"
+    },
+    {
+      "id": "-N4WlK9W37_UlCWxfqe0",
+      "name": "English",
+      "position": 1,
+      "value": 70,
+      "language": "English"
+    },
+    {
+      "id": "bc60d815-d95f-4512-87c8-d9df13c46a98",
+      "name": "Espanol",
+      "position": 2,
+      "value": 40,
+      "language": "Espanol"
+    }
+  ],
+  "interests": [
+    {
+      "gifUrl": "https://media0.giphy.com/media/skzAE1Vo5rVkc/giphy.gif?cid=f7fb5bba10rxjd3c6c0ij94scmu8ss4tt47jalnn7oq1nskv&rid=giphy.gif&ct=g",
+      "gifUser": {
+        "isVerified": true,
+        "name": "Animation Domination High-Def",
+        "profileAvatarUrl": "https://media3.giphy.com/avatars/foxadhd/FIpJVXV5aO80.gif",
+        "profileUrl": "https://giphy.com/foxadhd/"
+      },
+      "id": "0d25b4ec-0ac9-45bc-8243-99070e516dd7",
+      "index": 0,
+      "name": "surf"
+    },
+    {
+      "gifUrl": "https://media4.giphy.com/media/26vUz4HZxF7Q0zYmk/giphy.gif?cid=f7fb5bbamy0gabcyt306w2twlvpfe6fdu6hfzpki219lq9j9&rid=giphy.gif&ct=g",
+      "gifUser": {
+        "isVerified": false,
+        "name": "Alle Farben",
+        "profileAvatarUrl": "https://media2.giphy.com/avatars/allefarbenofficial/57bIVa6HE2hp.jpg",
+        "profileUrl": "https://giphy.com/allefarbenofficial/"
+      },
+      "id": "27300519-4ec7-416f-9224-56f0a8640dd0",
+      "index": 1,
+      "name": "barbecue"
+    },
+    {
+      "gifUrl": "https://media0.giphy.com/media/tJU72w9lPzUPe/giphy.gif?cid=f7fb5bbaf04ugnhkf33zg28tkqatcg4xdu1k2zesurwo2qfh&rid=giphy.gif&ct=g",
+      "id": "446ff4ff-4db6-41e4-9f3c-aea6d75fb4d7",
+      "index": 2,
+      "name": "guitar"
+    }
+  ],
+  "projects": [],
+  "specific": {
+    "basics": {
+      "visaSponsorship": false,
+      "personalDescription": ""
+    },
+    "dreamJob": {
+      "locations": [
+        {
+          "id": "ChIJD7fiBh9u5kcRYJSMaMOCCwQ",
+          "index": 0,
+          "placeId": "ChIJD7fiBh9u5kcRYJSMaMOCCwQ",
+          "name": "Paris, France"
+        },
+        {
+          "id": "ChIJr64TLpfVEEgR0M2iyu-FLdM",
+          "index": 1,
+          "placeId": "ChIJr64TLpfVEEgR0M2iyu-FLdM",
+          "name": "Quimper, France"
+        }
+      ],
+      "salary": "60",
+      "perks": {
+        "challenge": true,
+        "salary": true
+      },
+      "remoteFrequency": "fullTime"
+    },
+    "currentJob": {},
+    "education": {
+      "studiesLevel": 5
+    },
+    "work": {
+      "contractTypes": [
+        "permanent"
+      ],
+      "codingYears": 4.5,
+      "searchState": "activelySearching",
+      "otherExperienceYears": 0,
+      "codeExperienceYears": 4
+    },
+    "sound": {
+      "embedUrl": "https://open.spotify.com/embed/playlist/0PlELr4gwTF9FeoDWzOs38?si=9315b5ddda9e4373"
+    },
+    "interestedBy": "Looking forward to work with modern frameworks such as Svelte, Nuxt"
+  }
 }

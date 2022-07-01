@@ -1,15 +1,16 @@
 <script lang='ts' setup>
-import Skill from '../../components/molecules/Skill.vue';
-definePageMeta({
-    layout: 'index',
-});
+import Skill from '../../components/molecules/Skill.vue'
 const props = defineProps({
-    data: {
-        type: Object,
-        required: true,
-    }
+  data: {
+    type: Object,
+    required: true,
+  },
+})
+definePageMeta({
+  layout: 'index',
 })
 </script>
+
 <template>
-    <Skill v-for="skill in data" :id="skill.id" :heading="skill.name" :value="skill.value" />
+  <Skill v-for="skill in data" :key="skill.id" :id="skill.id" :heading="skill.name" :value="skill.value" />
 </template>

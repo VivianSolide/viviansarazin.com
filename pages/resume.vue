@@ -1,12 +1,11 @@
 <script lang='ts' setup>
-import Heading from '../../components/atoms/Heading.vue';
-import Position from '../../components/organisms/Position.vue';
-import Skills from '../../components/organisms/Skills.vue';
-import Skills1 from '../../components/organisms/Skills.vue';
+import Heading from '@/components/atoms/Heading.vue'
+import Position from '@/components/organisms/Position.vue'
+import Skills from '@/components/organisms/Skills.vue'
 
 definePageMeta({
-  layout: "index",
-});
+  layout: 'index',
+})
 
 const { data } = await useAsyncData('resume', () => queryContent('/resume').findOne())
 
@@ -22,6 +21,7 @@ const ironHackStartDate = new Date(2017, 10, 1)
 const years = computeDiffYears(birthDate, now)
 const codingYears = computeDiffYears(ironHackStartDate, now)
 </script>
+
 <template>
   <div>
     <!-- Basics -->
@@ -33,7 +33,7 @@ const codingYears = computeDiffYears(ironHackStartDate, now)
         <p>{{ years }} y/o</p>
         <p>Living in {{ data.basics.location.city }}, France</p>
         <p>Around {{ codingYears }} coding years</p>
-        <p>Looking for a Vue/Nuxt challenge</p>
+        <p><strong>Looking for a Nuxt3 challenge</strong></p>
       </div>
     </div>
     <!-- Positions -->

@@ -1,10 +1,11 @@
 <script lang="ts" setup>
 import Chip from '@/components/atoms/Chip.vue'
 definePageMeta({
-  layout: "index",
-});
+  layout: 'index',
+})
 const { data } = await useAsyncData('hello', () => queryContent('/').findOne())
 </script>
+
 <template>
   <div class="flex flex-col-reverse lg:flex-row lg:justify-between lg:pt-32">
     <div class="flex flex-col justify-center">
