@@ -19,6 +19,6 @@ const { data } = await useAsyncData('hello', () => queryContent('/').findOne())
         </NuxtLink>
       </div>
     </div>
-    <img src="~/public/assets/images/profile.jpeg" class="lg:ml-8 rounded-full" alt="Vivian SARAZIN profile pic">
+    <img src="~/assets/images/profile.jpeg" class="lg:ml-8 rounded-full" alt="Vivian SARAZIN profile pic">
   </div>
 </template>

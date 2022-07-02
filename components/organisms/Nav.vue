@@ -6,17 +6,16 @@ import Socials from '~/components/molecules/Nav/Socials.vue'
 
 <template>
   <nav
-    class="flex justify-between  items-center h-16 px-16 bg-blue-100 border-b-blue-200 shadow-md fixed w-full z-10"
-  >
+    class="flex md:justify-between items-center h-16 px-2 md:px-16 bg-blue-100 border-b-blue-200 shadow-md fixed w-full z-10">
     <!-- Left -->
-    <div class="flex space-x-4">
+    <div class="flex space-x-4 ">
       <Logo />
       <Links />
     </div>
     <!-- Right -->
     <div>
       <!-- Social -->
-      <Socials />
+      <Socials class="hidden md:flex" />
     </div>
   </nav>
 </template>
