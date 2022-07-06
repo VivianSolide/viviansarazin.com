@@ -26,6 +26,7 @@
     "@typescript-eslint/parser": "^5.30.5",
     "@vitest/ui": "^0.17.0",
     "axios": "^0.27.2",
+    "c8": "^7.11.3",
     "eslint": "^8.18.0",
     "husky": "^8.0.0",
     "jsdom": "^20.0.0",
