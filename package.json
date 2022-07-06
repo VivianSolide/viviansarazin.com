@@ -8,7 +8,10 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "test:unit": "vitest",
+    "test:unit": "vitest watch",
+    "test:unit:ci": "vitest run",
+    "test:unit:coverage": "vitest --coverage",
+    "test:unit:ui": "vitest --ui",
     "lint": "eslint --ext .ts,.js,.vue .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky install"
@@ -21,15 +24,16 @@
     "@tailwindcss/typography": "^0.5.2",
     "@typescript-eslint/eslint-plugin": "^5.30.5",
     "@typescript-eslint/parser": "^5.30.5",
+    "@vitest/ui": "^0.17.0",
     "axios": "^0.27.2",
     "eslint": "^8.18.0",
+    "husky": "^8.0.0",
     "jsdom": "^20.0.0",
     "nuxt": "3.0.0-rc.4",
     "playwright": "^1.22.2",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.11",
     "typescript": "^4.7.4",
-    "vitest": "^0.15.2",
-    "husky": "^8.0.0"
+    "vitest": "^0.15.2"
   }
 }
