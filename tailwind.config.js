@@ -2,10 +2,10 @@
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    extend: {}
   },
   plugins: [
-    require('@tailwindcss/typography'),
+    require('@tailwindcss/typography')
   ],
   safelist: [
     'h-32'
