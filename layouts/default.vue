@@ -2,7 +2,7 @@
 import Nav from '~/components/organisms/Nav.vue'
 import Footer from '~/components/organisms/Footer.vue'
 definePageMeta({
-  layout: 'index',
+  layout: 'index'
 })
 </script>
 
@@ -17,4 +17,3 @@ definePageMeta({
     <Footer />
   </div>
 </template>
-

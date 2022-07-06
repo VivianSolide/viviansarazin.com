@@ -1,5 +1,4 @@
 {
-    // "extends": "@antfu",
     "extends": [
         "@nuxtjs/eslint-config-typescript"
     ]

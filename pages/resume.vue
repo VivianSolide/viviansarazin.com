@@ -4,7 +4,7 @@ import Position from '@/components/organisms/Position.vue'
 import Skills from '@/components/organisms/Skills.vue'
 
 definePageMeta({
-  layout: 'index',
+  layout: 'index'
 })
 
 const { data } = await useAsyncData('resume', () => queryContent('/resume').findOne())

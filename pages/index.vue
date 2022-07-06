@@ -1,8 +1,10 @@
 <script lang="ts" setup>
 import Chip from '@/components/atoms/Chip.vue'
+
 definePageMeta({
-  layout: 'index',
+  layout: 'index'
 })
+
 const { data } = await useAsyncData('hello', () => queryContent('/').findOne())
 </script>
 

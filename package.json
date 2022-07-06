@@ -15,10 +15,11 @@
   "devDependencies": {
     "@nuxt/content": "^2.0.1",
     "@nuxt/test-utils-edge": "^3.0.0-rc.4-27588443.cf25525",
-    "@nuxtjs/eslint-config": "^10.0.0",
     "@nuxtjs/eslint-config-typescript": "^10.0.0",
     "@nuxtjs/tailwindcss": "^5.1.2",
     "@tailwindcss/typography": "^0.5.2",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
     "axios": "^0.27.2",
     "eslint": "^8.18.0",
     "jsdom": "^20.0.0",
@@ -26,6 +27,7 @@
     "playwright": "^1.22.2",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.11",
+    "typescript": "^4.7.4",
     "vitest": "^0.15.2"
   }
 }
