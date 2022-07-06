@@ -5,7 +5,7 @@ projects: ['groupe-nomblot']
 mate: 'michael-blaizot'
 ---
 
-![michael](/public/assets/team/michael-blaizot/profile.jpg)
+![michael](/assets/images/team/michael-blaizot/profile.jpg){.rounded-full.h-32}
 # Michaël Blaizot
 
 Product Designer

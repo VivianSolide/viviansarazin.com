@@ -7,6 +7,7 @@ const { data } = await useAsyncData('team', () => queryContent('/team').find())
   <div>
     <!-- Heading -->
     <Heading heading="Teammates" :order="1" />
+    <p>I use to work with these folks.</p>
     <!-- Team -->
     <div class="grid md:grid-cols-2 md:gap-x-8 gap-y-2">
       <div v-for="mate in data" :key="mate._path">

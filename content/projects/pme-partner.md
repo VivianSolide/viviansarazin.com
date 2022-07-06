@@ -2,10 +2,10 @@
 title: 'PME Partner'
 description: 'A business website'
 stack: ['Gridsome', 'Composition', 'GraphQL', 'Wordpress']
-imgSrc: '/assets/projects/pme-partner/cover.png'
+imgSrc: '/assets/images/projects/pme-partner/cover.png'
 
 ---
-::Intro{heading="PME Partner" imgSrc="/assets/projects/pme-partner/cover.png" url="https://pme-partner.com"}
+::Intro{heading="PME Partner" imgSrc="/assets/images/projects/pme-partner/cover.png" url="https://pme-partner.com"}
 ::
 
 For this website, I used the following technologies:
