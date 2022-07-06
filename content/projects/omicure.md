@@ -2,9 +2,9 @@
 title: 'TrialFinder by OmiCure'
 description: 'A clinical trials search engine'
 stack: ['NuxtJS', 'Composition', 'Typescript', 'FastAPI', 'GitLab', 'ClickUp', 'Cypress']
-imgSrc: '/assets/projects/omicure/cover.png'
+imgSrc: '/assets/images/projects/omicure/cover.png'
 ---
-::Intro{heading="TrialFinder by OmiCure" imgSrc="/assets/projects/omicure/cover.png" url="https://trialfinder.omicure.com/"}
+::Intro{heading="TrialFinder by OmiCure" imgSrc="/assets/images/projects/omicure/cover.png" url="https://trialfinder.omicure.com/"}
 ::
 
 For this website, I used the following technologies:

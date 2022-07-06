@@ -5,7 +5,7 @@ projects: ['groupe-nomblot']
 mate: 'samy-barboucha'
 ---
 
-![samy](/assets/team/samy-barboucha/profile.jpeg){.rounded-full.h-32.w-auto}
+![samy](/assets/images/team/samy-barboucha/profile.jpeg){.rounded-full.h-32.w-auto}
 # Samy Barboucha
 
 Fullstack JS
