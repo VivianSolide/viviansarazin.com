@@ -1,11 +1,11 @@
 <script lang="ts" setup>
 import Chip from '@/components/atoms/Chip.vue'
 
-const props = defineProps({
+defineProps({
   chips: {
     type: Array,
-    required: true,
-  },
+    required: true
+  }
 })
 </script>
 

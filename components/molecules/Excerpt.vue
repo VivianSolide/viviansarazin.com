@@ -1,14 +1,14 @@
 <script setup>
 import Chips from '@/components/molecules/Chips.vue'
-const props = defineProps({
+defineProps({
   excerpt: {
     type: String,
-    required: true,
+    required: true
   },
   tags: {
     type: Array,
-    required: true,
-  },
+    required: true
+  }
 })
 </script>
 

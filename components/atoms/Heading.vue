@@ -1,14 +1,14 @@
 <script setup>
-const props = defineProps({
+defineProps({
   heading: {
     type: String,
-    required: true,
+    required: true
   },
   order: {
     type: Number,
     required: false,
-    default: 2,
-  },
+    default: 2
+  }
 })
 </script>
 

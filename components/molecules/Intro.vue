@@ -1,14 +1,14 @@
 <script setup>
 import Heading from '@/components/atoms/Heading.vue'
-const props = defineProps({
+defineProps({
   heading: {
     type: String,
-    required: true,
+    required: true
   },
   imgSrc: {
     type: String,
-    required: true,
-  },
+    required: true
+  }
 })
 </script>
 

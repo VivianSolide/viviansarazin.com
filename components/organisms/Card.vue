@@ -1,27 +1,27 @@
 <script setup>
 import Intro from '@/components/molecules/Intro.vue'
 import Excerpt from '@/components/molecules/Excerpt.vue'
-const props = defineProps({
+defineProps({
   heading: {
     type: String,
-    required: true,
+    required: true
   },
   path: {
     type: String,
-    required: true,
+    required: true
   },
   imgSrc: {
     type: String,
-    required: true,
+    required: true
   },
   excerpt: {
     type: String,
-    required: true,
+    required: true
   },
   tags: {
     type: Array,
-    required: true,
-  },
+    required: true
+  }
 })
 </script>
 
