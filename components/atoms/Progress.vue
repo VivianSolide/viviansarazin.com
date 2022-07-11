@@ -1,16 +1,16 @@
 <script lang='ts' setup>
-const props = defineProps({
+defineProps({
   id: {
     type: String,
-    required: true,
+    required: true
   },
   value: {
     type: Number,
-    required: true,
-  },
+    required: true
+  }
 })
 definePageMeta({
-  layout: 'index',
+  layout: 'index'
 })
 </script>
 

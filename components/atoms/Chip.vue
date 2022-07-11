@@ -1,14 +1,14 @@
 <script lang="ts" setup>
-const props = defineProps({
+defineProps({
   chip: {
     type: String,
-    required: true,
-  },
+    required: true
+  }
 })
 </script>
 
 <template>
-  <p class="bg-blue-100 border border-blue-300 rounded-2xl py-1 px-4 text-sm">
+  <p class="bg-blue-100 border border-blue-500 rounded-full py-2 px-4 text-sm">
     {{ chip }}
   </p>
 </template>

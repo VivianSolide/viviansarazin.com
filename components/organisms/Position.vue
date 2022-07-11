@@ -5,12 +5,12 @@ import Chip from '../atoms/Chip.vue'
 const props = defineProps({
   data: {
     type: Array,
-    required: true,
-  },
+    required: true
+  }
 })
 
 definePageMeta({
-  layout: 'index',
+  layout: 'index'
 })
 
 const positions = props.data.map((el, i) => {
@@ -21,7 +21,7 @@ const positions = props.data.map((el, i) => {
     startDate: el.startDate ? el.startDate : '',
     endDate: el.endDate ? el.endDate : '',
     position: el.position ? el.position : el.studyType,
-    summary: el.summary,
+    summary: el.summary
   }
 })
 </script>

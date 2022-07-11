@@ -1,22 +1,22 @@
 <script lang='ts' setup>
 import Heading from '../../components/atoms/Heading.vue'
 import Progress from '../../components/atoms/Progress.vue'
-const props = defineProps({
+defineProps({
   id: {
     type: String,
-    required: true,
+    required: true
   },
   heading: {
     type: String,
-    required: true,
+    required: true
   },
   value: {
     type: Number,
-    required: true,
-  },
+    required: true
+  }
 })
 definePageMeta({
-  layout: 'index',
+  layout: 'index'
 })
 </script>
 
