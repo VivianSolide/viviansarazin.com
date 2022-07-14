@@ -23,17 +23,20 @@ const codingYears = computeDiffYears(ironHackStartDate, now)
 </script>
 
 <template>
-  <div>
+  <div class="pt-32">
     <!-- Basics -->
-    <Heading heading="Vivian SARAZIN" class="pt-16" :order="1" />
+    <Heading heading="Vivian SARAZIN" :order="1" />
     <div class="grid md:grid-cols-2">
-      <div class="flex flex-col ">
+      <div class="flex flex-col justify-center">
         <Heading heading="Basics" />
         <p>He/his</p>
         <p>{{ years }} y/o</p>
         <p>Living in {{ data.basics.location.city }}, France</p>
         <p>Around {{ codingYears }} coding years</p>
         <p><strong>Looking for a Nuxt3 challenge</strong></p>
+      </div>
+      <div>
+        <img src="~/public/assets/images/profile.jpeg" class="rounded-full" alt="Vivian SARAZIN profile pic">
       </div>
     </div>
     <!-- Positions -->
