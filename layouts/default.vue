@@ -7,7 +7,7 @@ definePageMeta({
 </script>
 
 <template>
-  <div class="bg-gradient-to-r from-cyan-300 to-blue-300">
+  <div class="bg-gradient-to-r from-cyan-300 to-cyan-500">
     <Nav />
 
     <div class="px-4 md:max-w-screen-xl mx-auto prose pt-32 min-h-screen ">

@@ -36,5 +36,8 @@
     "prettier-plugin-tailwindcss": "^0.1.11",
     "typescript": "^4.7.4",
     "vitest": "^0.15.2"
+  },
+  "dependencies": {
+    "vue3-lottie": "^2.2.5"
   }
 }
