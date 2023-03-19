@@ -12,9 +12,8 @@ For this website, I used the following technologies:
   - Framework: NuxtJS
   - CSS: TailwindCSS
 - **Backend**
-  - Framework: ExpressJS (and later NestJS)
+  - Framework: FastAPI
   - Database: PostgreSQL
-  - Messaging: RabbitMQ
 - **Project management**
   - Gitlab
   - ClickUp
